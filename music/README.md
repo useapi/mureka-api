@@ -25,7 +25,7 @@ If a `mureka_results.txt` file from a previous run is present, the script offers
 `prompts.json` is an array of prompt objects:
 
 - `prompt` — **required** text that guides the AI-written lyrics, style, mood, and theme (max 3000 characters).
-- `model` — optional. Supported values: `V9` (default), `V8`, `O2`, `V7.6`, `V7.5`. When omitted, the API applies its own default (currently `V9`). Retired aliases (`V7`, `O1`, `V6`, `V5.5`) redirect to `V7.6`.
+- `model` — optional. Supported values: `V9` (default), `V8`, `O2`, `V7.6`. When omitted, the API applies its own default (currently `V9`). The API also still accepts older aliases (`V7.5`, `V7`, `O1`, `V6`) that map to current engines — add any you want to use to `SUPPORTED_MODELS` in `mureka.mjs`.
 
 Every supported parameter is documented on [POST /music/create](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create).
 

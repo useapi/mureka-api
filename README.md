@@ -1,6 +1,6 @@
 # Mureka API examples (useapi.net)
 
-Runnable Node.js examples for the [Mureka API](https://useapi.net/docs/api-mureka-v1) by [useapi.net](https://useapi.net) — a **Suno / Udio alternative**. Drive your own [Mureka](https://www.mureka.ai) account over a simple REST API: generate full songs from lyrics, descriptions, or musical styles with **SkyMusic 2.0** (V8 / O2 / V7.6 / V7.5), plus **instrumental** tracks, **extend**, **vocal cloning**, **motif (melody) seeding**, **MIDI export**, and **multi-speaker speech** with voice cloning. No per-call metering — it runs your own Mureka subscription.
+Runnable Node.js examples for the [Mureka API](https://useapi.net/docs/api-mureka-v1) by [useapi.net](https://useapi.net) — a **Suno / Udio alternative**. Drive your own [Mureka](https://www.mureka.ai) account over a simple REST API: generate full songs from lyrics, descriptions, or musical styles with **SkyMusic** — `V9` (default), plus `V8` / `O2` / `V7.6` — alongside **instrumental** tracks, **extend**, **vocal cloning**, **motif (melody) seeding**, **MIDI export**, and **multi-speaker speech** with voice cloning. No per-call metering — it runs your own Mureka subscription.
 
 Each example reads a list of prompts from `prompts.json`, submits them through the useapi.net Mureka API, polls each job until it is final, and downloads every result — so you can queue a batch and come back to the winners.
 
