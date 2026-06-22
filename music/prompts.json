@@ -1,0 +1,13 @@
+[
+    {
+        "prompt": "An upbeat synth-pop anthem about chasing the sunrise after an all-night road trip — bright arpeggios, a four-on-the-floor beat, and a soaring, hopeful chorus. When model is omitted the API default (V9) is used."
+    },
+    {
+        "model": "V8",
+        "prompt": "A mellow acoustic folk ballad, fingerpicked guitar and soft female vocals, about missing someone who moved to another city. Verse-chorus-verse-chorus-bridge structure, gentle and intimate."
+    },
+    {
+        "model": "O2",
+        "prompt": "A high-energy drum-and-bass track with a gritty male rap verse and a melodic sung hook about staying focused under pressure. Heavy sub-bass, fast breakbeats, cinematic build-ups. Pick another model with the model field — supported values: V9 (default), V8, O2, V7.6, V7.5. See https://useapi.net/docs/api-mureka-v1/post-mureka-music-create"
+    }
+]

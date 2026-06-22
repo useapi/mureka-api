@@ -1,0 +1,14 @@
+node_modules
+.vscode
+.env
+
+# Downloaded / generated media
+*.mp3
+*.wav
+*.zip
+
+# Run logs / scratch
+*_results.txt
+*_errors.txt
+result.json
+_*.*
