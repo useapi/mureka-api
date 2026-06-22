@@ -1,6 +1,6 @@
 /*
 
-Script version 1.0, June 21, 2026
+Script version 1.0, June 22, 2026
 
 Script to batch-generate songs using prompts with the Mureka API v1 by useapi.net 🚀
 Uses POST /music/create in asynchronous (fire-and-forget) mode, then polls each job
@@ -38,7 +38,7 @@ This command executes the script using API token user:1234-abcdefhijklmnopqrstuv
 Changelog:
 ==========
 
-- June 21, 2026: Initial release.
+- June 22, 2026: Initial release.
 
 */
 
