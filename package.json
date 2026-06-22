@@ -1,7 +1,7 @@
 {
   "name": "mureka-api",
   "version": "1.0.0",
-  "description": "Runnable Node.js examples for the Mureka API by useapi.net — a Suno / Udio alternative. Generate full songs from lyrics, descriptions, or styles with SkyMusic, plus instrumental, extend, vocal cloning, and multi-speaker speech.",
+  "description": "Runnable Node.js examples for the Mureka API by useapi.net — a Suno / Udio alternative. Generate full songs from lyrics, descriptions, or styles with Mureka's models, plus instrumental, extend, vocal cloning, and multi-speaker speech.",
   "author": "useapi.net",
   "license": "ISC",
   "type": "module",

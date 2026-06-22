@@ -1,12 +1,12 @@
 # Mureka API examples (useapi.net)
 
-Runnable Node.js examples for the [Mureka API](https://useapi.net/docs/api-mureka-v1) by [useapi.net](https://useapi.net) — a **Suno / Udio alternative**. Drive your own [Mureka](https://www.mureka.ai) account over a simple REST API: generate full songs from lyrics, descriptions, or musical styles with **SkyMusic** — the flagship `V9` (default) and `O2` models, plus `V8` and `V7.6` — alongside **instrumental** tracks, **extend**, **vocal cloning**, **motif (melody) seeding**, and **multi-speaker speech** with voice cloning. No per-call metering — it runs your own Mureka subscription.
+Runnable Node.js examples for the [Mureka API](https://useapi.net/docs/api-mureka-v1) by [useapi.net](https://useapi.net) — a **Suno / Udio alternative**. Drive your own [Mureka](https://www.mureka.ai) account over a simple REST API: generate full songs from lyrics, descriptions, or musical styles with **Mureka's models** — the flagship `V9` (default) and `O2` models, plus `V8` and `V7.6` — alongside **instrumental** tracks, **extend**, **vocal cloning**, **motif (melody) seeding**, and **multi-speaker speech** with voice cloning. No per-call metering — it runs your own Mureka subscription.
 
 Each example reads a list of prompts from `prompts.json`, submits them through the useapi.net Mureka API, polls each job until it is final, and downloads every result — so you can queue a batch and come back to the winners.
 
 | Example | What it does | Docs |
 |---|---|---|
-| [`music/`](./music) | Batch-generate **songs** from text prompts — AI-written lyrics, style, and mood, with **SkyMusic** model selection | [POST /music/create](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create) |
+| [`music/`](./music) | Batch-generate **songs** from text prompts — AI-written lyrics, style, and mood, with **Mureka** model selection | [POST /music/create](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create) |
 
 ## Quick start
 

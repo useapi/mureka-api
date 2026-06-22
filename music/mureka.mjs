@@ -56,7 +56,7 @@ const SLEEP_429 = 10 * 1000; // in milliseconds — wait between rate-limit / co
 const MAX_429_RETRIES = 6;   // give up a prompt after this many consecutive 429s (all slots busy)
 const SLEEP_POLL = 15 * 1000; // in milliseconds — a song takes ~45 seconds on average to generate
 
-// Current SkyMusic models for POST /music/create. V9 is the API default when model is omitted.
+// Current Mureka models for POST /music/create. V9 is the API default when model is omitted.
 // The API also accepts older aliases (V7.5, V7, O1, V6) that map to current engines — add any
 // you want to use here. See https://useapi.net/docs/api-mureka-v1/post-mureka-music-create
 const SUPPORTED_MODELS = ['V9', 'V8', 'O2', 'V7.6'];
