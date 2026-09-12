@@ -1,13 +1,13 @@
 # Song generation — Mureka API batch generation (Node.js)
 
-Batch-generate full songs with **Mureka's models** through the [Mureka API](https://useapi.net/docs/api-mureka-v1) by [useapi.net](https://useapi.net), driving your own [Mureka](https://www.mureka.ai) account.
+Batch-generate full songs with **Mureka's models** through the [Mureka API](https://useapi.net/docs/api-mureka-v1) by [useapi.net](https://useapi.net/?utm_source=github&utm_medium=readme&utm_campaign=mureka-api), driving your own [Mureka](https://www.mureka.ai) account.
 
 `mureka.mjs` reads prompts from `prompts.json`, submits each one to [`POST /music/create`](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create) in **async** mode (`async: true`), polls [`GET /jobs/{jobid}`](https://useapi.net/docs/api-mureka-v1/get-mureka-jobs-jobid) until each job is `completed`, and downloads every generated MP3. Each generation returns **two songs** (version `1` and `2`), so a single prompt yields two `.mp3` files.
 
 ## Prerequisites
 
 - [Node.js](https://nodejs.org) v21 or newer (no dependencies to install — uses built-in `fetch`)
-- A useapi.net [API token](https://useapi.net/docs/start-here/setup-useapi)
+- A useapi.net [API token](https://useapi.net/docs/start-here/setup-useapi?utm_source=github&utm_medium=readme&utm_campaign=mureka-api)
 - A connected [Mureka account](https://useapi.net/docs/start-here/setup-mureka)
 
 ## Usage
