@@ -1,6 +1,6 @@
 # Mureka API examples (useapi.net)
 
-Runnable Node.js examples for the [Mureka API](https://useapi.net/docs/api-mureka-v1) by [useapi.net](https://useapi.net/?utm_source=github&utm_medium=readme&utm_campaign=mureka-api) — a **Suno / Udio alternative**. Drive your own [Mureka](https://www.mureka.ai) account over a simple REST API: generate full songs from lyrics, descriptions, or musical styles with **Mureka's models** — the flagship `V9` (default) and `O2` models, plus `V8` and `V7.6` — alongside **instrumental** tracks, **extend**, **vocal cloning**, **motif (melody) seeding**, and **multi-speaker speech** with voice cloning. No per-call metering — it runs your own Mureka subscription.
+Runnable Node.js examples for the [Mureka API](https://useapi.net/docs/api-mureka-v1) by [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) — a **Suno / Udio alternative**. Drive your own [Mureka](https://www.mureka.ai) account over a simple REST API: generate full songs from lyrics, descriptions, or musical styles with **Mureka's models** — the flagship `V9` (default) and `O2` models, plus `V8` and `V7.6` — alongside **instrumental** tracks, **extend**, **vocal cloning**, **motif (melody) seeding**, and **multi-speaker speech** with voice cloning. No per-call metering — it runs your own Mureka subscription.
 
 Each example reads a list of prompts from `prompts.json`, submits them through the useapi.net Mureka API, polls each job until it is final, and downloads every result — so you can queue a batch and come back to the winners.
 
@@ -10,7 +10,7 @@ Each example reads a list of prompts from `prompts.json`, submits them through t
 
 ## Quick start
 
-You need [Node.js](https://nodejs.org) v21 or newer (no dependencies to install), a useapi.net [API token](https://useapi.net/docs/start-here/setup-useapi?utm_source=github&utm_medium=readme&utm_campaign=mureka-api), and a connected [Mureka account](https://useapi.net/docs/start-here/setup-mureka) (one [$15/month subscription](https://useapi.net/docs/subscription?utm_source=github&utm_medium=readme&utm_campaign=mureka-api) covers every useapi.net API):
+You need [Node.js](https://nodejs.org) v21 or newer (no dependencies to install), a useapi.net [API token](https://useapi.net/docs/start-here/setup-useapi?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api), and a connected [Mureka account](https://useapi.net/docs/start-here/setup-mureka) (one [$15/month subscription](https://useapi.net/docs/subscription?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) covers every useapi.net API):
 
 ```bash
 git clone https://github.com/useapi/mureka-api.git
@@ -22,7 +22,7 @@ node ./mureka.mjs <API_TOKEN>
 
 ## About useapi.net
 
-[useapi.net](https://useapi.net/?utm_source=github&utm_medium=readme&utm_campaign=mureka-api) is an experimental REST API for AI services. The Mureka API drives your own [Mureka](https://www.mureka.ai) account, so you spend your plan's credits at consumer rates instead of metered developer-API pricing. See the [model matrix](https://useapi.net/model-matrix?utm_source=github&utm_medium=readme&utm_campaign=mureka-api) and pricing on the [API overview](https://useapi.net/docs/api-mureka-v1).
+[useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) is an experimental REST API for AI services. The Mureka API drives your own [Mureka](https://www.mureka.ai) account, so you spend your plan's credits at consumer rates instead of metered developer-API pricing. See the [model matrix](https://useapi.net/model-matrix?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) and pricing on the [API overview](https://useapi.net/docs/api-mureka-v1).
 
 Visit our [Discord Server](https://discord.gg/w28uK3cnmF) or [Telegram Channel](https://t.me/use_api) for any support questions and concerns.
 
