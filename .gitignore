@@ -12,3 +12,4 @@ node_modules
 *_errors.txt
 result.json
 _*.*
+__pycache__/

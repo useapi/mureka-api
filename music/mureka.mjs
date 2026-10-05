@@ -1,6 +1,6 @@
 /*
 
-Script version 1.0, June 22, 2026
+Script version 1.1, October 4, 2026
 
 Script to batch-generate songs using prompts with the Mureka API v1 by useapi.net 🚀
 Uses POST /music/create in asynchronous (fire-and-forget) mode, then polls each job
@@ -39,6 +39,7 @@ Changelog:
 ==========
 
 - June 22, 2026: Initial release.
+- October 4, 2026: V9.5 is the API default model; V9.5 added to SUPPORTED_MODELS. Retries HTTP 555 (6303), which Mureka returns when two submissions reach one account at the same moment.
 
 */
 
@@ -56,10 +57,10 @@ const SLEEP_429 = 10 * 1000; // in milliseconds — wait between rate-limit / co
 const MAX_429_RETRIES = 6;   // give up a prompt after this many consecutive 429s (all slots busy)
 const SLEEP_POLL = 15 * 1000; // in milliseconds — a song takes ~45 seconds on average to generate
 
-// Current Mureka models for POST /music/create. V9 is the API default when model is omitted.
+// Current Mureka models for POST /music/create. V9.5 is the API default when model is omitted.
 // The API also accepts older aliases (V7.5, V7, O1, V6) that map to current engines — add any
 // you want to use here. See https://useapi.net/docs/api-mureka-v1/post-mureka-music-create
-const SUPPORTED_MODELS = ['V9', 'V8', 'O2', 'V7.6'];
+const SUPPORTED_MODELS = ['V9.5', 'V9', 'V8', 'O2', 'V7.6'];
 
 const urlAccounts = 'https://api.useapi.net/v1/mureka/accounts';
 const urlMusicCreate = 'https://api.useapi.net/v1/mureka/music/create';
@@ -89,9 +90,9 @@ async function fetchAccounts(apiToken) {
 async function submitMusic(apiToken, account, prompt, index) {
     const { model, prompt: text } = prompt;
 
-    console.log(`🚀 ${model ?? 'default (V9)'} » Prompt #${index} • account ${account} …`);
+    console.log(`🚀 ${model ?? 'default (V9.5)'} » Prompt #${index} • account ${account} …`);
 
-    // model is omitted from the body when not specified, so the API applies its own default (V9).
+    // model is omitted from the body when not specified, so the API applies its own default (V9.5).
     const body = JSON.stringify({
         account,
         prompt: text,
@@ -126,6 +127,11 @@ async function submitMusic(apiToken, account, prompt, index) {
             await fs.appendFile(ERRORS_FILE, `${error},#${index}:${text ?? ''}\n`);
             return { status: 500 };
         }
+    } else if (createResponse.status == 555 && createBody.includes('(6303)')) {
+        // Mureka rejects two submissions that arrive at the same moment on one account
+        // ("User generate multiple feeds at the same time") — wait and retry like a 429.
+        console.log(`🔄️ Retry on HTTP 555 (another submission on this account is in progress)`);
+        return { status: 429 };
     } else {
         switch (createResponse.status) {
             case 429:
@@ -259,7 +265,7 @@ async function main() {
         process.exit(1);
     }
 
-    console.info('Script v1.0');
+    console.info('Script v1.1');
 
     console.info('Node version is: ' + process.version);
 

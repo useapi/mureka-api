@@ -1,0 +1,10 @@
+[
+    {
+        "prompt": "Ambient electronic with soft pads and a slow, warm pulse, for a quiet walk through a forest at dawn. When model is omitted the API default (V9.5) is used."
+    },
+    {
+        "model": "O2",
+        "title": "Cascading Sunrise",
+        "prompt": "Ethereal post-rock, cascading delay guitars, orchestral swells building to a cinematic crescendo. Supported models: V9.5 (default), V9, V8, O2, V7.6, V7.5. See https://useapi.net/docs/api-mureka-v1/post-mureka-music-create-instrumental"
+    }
+]
