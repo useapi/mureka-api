@@ -24,7 +24,7 @@ Running the Script:
 Usage: node lyrics-song.mjs <API_TOKEN> [ACCOUNT] [PROMPTS_FILE]
 
 Replace API_TOKEN with your actual useapi.net API token, see https://useapi.net/docs/start-here/setup-useapi
-ACCOUNT is optional — your Mureka account id or its Google email, see https://useapi.net/docs/start-here/setup-mureka
+ACCOUNT is optional — your Mureka account id or its email, see https://useapi.net/docs/start-here/setup-mureka
   It is only required when more than one Mureka account is configured. With a single account it is auto-selected.
 If optional PROMPTS_FILE not provided prompts.json will be used.
 
@@ -268,7 +268,7 @@ async function main() {
         process.exit(1);
     }
 
-    console.info('Script v1.1');
+    console.info('Script v1.0');
 
     console.info('Node version is: ' + process.version);
 
@@ -306,7 +306,7 @@ async function main() {
     }
 }
 
-// Resolve the Mureka account to use: by id or Google email when provided, otherwise the
+// Resolve the Mureka account to use: by id or email when provided, otherwise the
 // single configured account. Returns the numeric account id string sent to the API.
 function resolveAccount(accounts, accountArg) {
     const accountList = Object.values(accounts);
@@ -321,7 +321,7 @@ function resolveAccount(accounts, accountArg) {
     let matched;
 
     if (accountArg) {
-        // Match by Mureka account id or by the account's Google email.
+        // Match by Mureka account id or by the account's email.
         matched = accountList.find(a => a.account === accountArg || a.email === accountArg);
         if (!matched) {
             console.error(`⛔ Account "${accountArg}" not found. Please refer to https://useapi.net/docs/start-here/setup-mureka`);

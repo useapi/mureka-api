@@ -2,7 +2,7 @@
 
 Batch-generate full songs with **Mureka's models** through the [Mureka API](https://useapi.net/docs/api-mureka-v1) by [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api), driving your own [Mureka](https://www.mureka.ai) account.
 
-📖 Full walkthrough: **[How to Generate AI Music with the Mureka API (Suno / Udio Alternative)](https://useapi.net/docs/articles/mureka-bash?utm_source=github&utm_medium=referral&utm_campaign=mureka-api)**
+📖 Full walkthrough: **[How to Generate AI Music with the Mureka API (Suno / Udio Alternative)](https://useapi.net/docs/articles/mureka-bash?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api)**
 
 `mureka.mjs` (and its Python twin `mureka.py`) reads prompts from `prompts.json`, submits each one to [`POST /music/create`](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create) in **async** mode (`async: true`), polls [`GET /jobs/{jobid}`](https://useapi.net/docs/api-mureka-v1/get-mureka-jobs-jobid) until each job is `completed`, and downloads every generated MP3. Each generation returns **two songs** (version `1` and `2`, occasionally a third), so a single prompt yields two or more `.mp3` files.
 
@@ -20,7 +20,7 @@ node ./mureka.mjs <API_TOKEN> [ACCOUNT] [PROMPTS_FILE]
 python3 ./mureka.py <API_TOKEN> [ACCOUNT] [PROMPTS_FILE]
 ```
 
-`ACCOUNT` is optional — pass your Mureka **account id** or its **Google email** only when more than one account is configured; with a single account it is auto-selected. `PROMPTS_FILE` defaults to `prompts.json`.
+`ACCOUNT` is optional — pass your Mureka **account id** or its **email** only when more than one account is configured; with a single account it is auto-selected. `PROMPTS_FILE` defaults to `prompts.json`.
 
 If a `mureka_results.txt` file from a previous run is present, the script offers to resume — polling those jobs and downloading their audio — before submitting anything new. Errors are appended to `mureka_errors.txt`.
 

@@ -10,6 +10,6 @@
         "title": "Pirate Programmer",
         "desc": "sea shanty, electronic, male vocal, upbeat",
         "vocal_gender": "male",
-        "lyrics": "[Verse 1]\nWe sail the stack from dusk to dawn\nThe build is red, the coffee's gone\n[Chorus]\nHeave ho, push the code\nShip it down the open road\n\nSee https://useapi.net/docs/api-mureka-v1/post-mureka-music-create-advanced for every parameter: lyrics is required (up to 5,000 characters, use [Verse] / [Chorus] tags), title up to 50, desc is a comma-separated list of genres, moods and vocals."
+        "lyrics": "[Verse 1]\nWe sail the stack from dusk to dawn\nThe build is red, the coffee's gone\n[Chorus]\nHeave ho, push the code\nShip it down the open road"
     }
 ]

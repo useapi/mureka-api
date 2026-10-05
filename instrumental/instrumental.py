@@ -26,7 +26,7 @@ Running the Script:
 Usage: python3 instrumental.py <API_TOKEN> [ACCOUNT] [PROMPTS_FILE]
 
 Replace API_TOKEN with your actual useapi.net API token, see https://useapi.net/docs/start-here/setup-useapi
-ACCOUNT is optional — your Mureka account id or its Google email, see https://useapi.net/docs/start-here/setup-mureka
+ACCOUNT is optional — your Mureka account id or its email, see https://useapi.net/docs/start-here/setup-mureka
   It is only required when more than one Mureka account is configured. With a single account it is auto-selected.
 If optional PROMPTS_FILE not provided prompts.json will be used.
 
@@ -257,7 +257,7 @@ def download(apiToken):
             time.sleep(SLEEP_POLL)
 
 
-# Resolve the Mureka account to use: by id or Google email when provided, otherwise the
+# Resolve the Mureka account to use: by id or email when provided, otherwise the
 # single configured account. Returns the account id string sent to the API.
 def resolveAccount(accounts, accountArg):
     accountList = list(accounts.values())
@@ -269,7 +269,7 @@ def resolveAccount(accounts, accountArg):
         sys.exit(1)
 
     if accountArg:
-        # Match by Mureka account id or by the account's Google email.
+        # Match by Mureka account id or by the account's email.
         matched = next((a for a in accountList if a.get('account') == accountArg or a.get('email') == accountArg), None)
         if not matched:
             print(f'⛔ Account "{accountArg}" not found. Please refer to https://useapi.net/docs/start-here/setup-mureka', file=sys.stderr)
