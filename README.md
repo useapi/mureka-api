@@ -26,6 +26,23 @@ python3 ./mureka.py <API_TOKEN>
 
 `API_TOKEN` is your useapi.net token. The optional second argument is your Mureka account id (or its email) — only needed when you have more than one account configured; with a single account it is auto-selected. Edit `prompts.json` in each folder to queue your own prompts. Every supported parameter is documented on the [POST /music/create](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create) endpoint page.
 
+## MCP server
+
+useapi.net also runs a hosted [Model Context Protocol](https://modelcontextprotocol.io) server for Mureka, so an AI assistant such as Claude Code, Cursor or VS Code Copilot can use it on your own account. It has 40 tools: songs from a prompt or your lyrics (style, voice, character, reference track or melody), instrumentals and lyrics, extend, section edits and remix, stems with MIDI and DAW sessions, sheet music (MusicXML and PDF), characters that make your own voice a reusable singer, uploads, YouTube import, and speech with voice cloning. Nothing to install or run locally.
+
+- Endpoint: `https://api.useapi.net/v1/mureka/mcp`
+- Transport: Streamable HTTP
+- Authorization: your useapi.net API token in the `Authorization: Bearer …` header, and an account connected with the [Mureka setup](https://useapi.net/docs/start-here/setup-mureka?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api)
+- Listed in the official MCP Registry as `net.useapi/mureka`
+
+Claude Code:
+
+```bash
+claude mcp add --transport http useapi-mureka https://api.useapi.net/v1/mureka/mcp --header "Authorization: Bearer YOUR_API_TOKEN"
+```
+
+Cursor, VS Code, Windsurf and the full tool list: [Mureka MCP server docs](https://useapi.net/docs/api-mureka-v1/mcp?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api). useapi.net is a third-party API, not affiliated with Mureka or Kunlun Tech.
+
 ## Common questions
 
 - **Does Mureka have an API?** Yes, two kinds. Mureka sells an [official developer API](https://platform.mureka.ai/pricing) as prepaid top-ups consumed per call, from $30 (1 concurrent request) up to $30,000 (150 concurrent), with extra charges for lyrics generation and stem export. This repo uses the useapi.net Mureka API instead, a third-party REST API that drives your own Mureka website account, so you generate at website plan prices rather than official API rates.
