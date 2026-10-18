@@ -6,12 +6,15 @@ Each example ships JavaScript and Python implementations (`.mjs` and `.py`, no d
 
 The [`sheet-music/`](./sheet-music) example is a single call instead: give it a song, a YouTube link or an MP3 and it saves the score's MusicXML and PDFs.
 
+The [`own-voice/`](./own-voice) example sings your lyrics in your own voice: upload a clip once, use it directly or turn it into a reusable character, then manage your characters.
+
 | Example | What it does | Docs |
 |---|---|---|
 | [`music/`](./music) | Batch-generate **songs** from text prompts — AI-written lyrics, style, and mood, with **Mureka** model selection | [POST /music/create](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create) |
 | [`lyrics-song/`](./lyrics-song) | Turn **your own lyrics** into songs, steered by genres, moods and vocal gender | [POST /music/create-advanced](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create-advanced?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) |
 | [`instrumental/`](./instrumental) | Batch-generate **instrumental** tracks (no vocals) from a description | [POST /music/create-instrumental](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create-instrumental?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) |
 | [`sheet-music/`](./sheet-music) | Turn a Mureka song, a **YouTube link** or a local **MP3** into **sheet music**: MusicXML, staff PDF and numbered-notation PDF (October 18, 2026) | [POST /music/score](https://useapi.net/docs/api-mureka-v1/post-mureka-music-score?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) · [tutorial](https://useapi.net/docs/articles/mureka-sheet-music?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) |
+| [`own-voice/`](./own-voice) | Sing **your own lyrics in your own voice**: upload a voice clip, use it once or make a reusable **character** (free), then list, publish and delete characters (October 18, 2026) | [POST /music/characters](https://useapi.net/docs/api-mureka-v1/post-mureka-music-characters?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) · [example post](https://useapi.net/blog/261016?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) |
 
 Walkthrough of the three song examples with `curl`: [How to Generate AI Music with the Mureka API (Suno / Udio Alternative)](https://useapi.net/docs/articles/mureka-bash?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api).
 

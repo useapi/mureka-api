@@ -1,0 +1,13 @@
+{
+    "title": "This Is It",
+    "model": "V9.5",
+    "vocal_gender": "female",
+    "desc": "dark minor-key funk pop, tight drums, slap bass, synth stabs, tense female vocal",
+    "lyrics": "[Verse]\nStatic on the line at the edge of the night\nEvery window's dark but one burning light\nI hear the footsteps that I swore were gone\nPlaying back the same old song\n\n[Pre-Chorus]\nDon't you tell me it's over, don't you lie to my face\nI can feel you in the shadows, I can see you in this place\n\n[Chorus]\nThis is it, this is it\nEvery secret's coming out\nThis is it, this is it\nNo more shadows, no more doubt\n\n[Verse]\nLipstick on a letter that I never wrote\nSomeone else's perfume on my winter coat\nThey say this city never sleeps alone\nThen who keeps calling, calling on my phone\n\n[Pre-Chorus]\nDon't you tell me it's over, don't you lie to my face\nI can feel you in the shadows, I can see you in this place\n\n[Chorus]\nThis is it, this is it\nEvery secret's coming out\nThis is it, this is it\nNo more shadows, no more doubt\n\n[Bridge]\nI gave you all my midnights\nYou gave me all your lies\nNow the curtain's falling\nAnd I see it in your eyes\n\n[Chorus]\nThis is it, this is it\nEvery secret's coming out\nThis is it, this is it\nNo more shadows, no more doubt\n\n[Outro]\nThis is it...",
+    "character": {
+        "name": "Scarlett",
+        "bio": "A smoky, intimate female voice.",
+        "tags": ["Female", "Smoky"],
+        "private": true
+    }
+}
