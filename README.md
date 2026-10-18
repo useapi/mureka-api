@@ -4,13 +4,16 @@ Runnable Node.js and Python examples for the [Mureka API](https://useapi.net/doc
 
 Each example ships JavaScript and Python implementations (`.mjs` and `.py`, no dependencies) that read a list of prompts from `prompts.json`, submit them through the useapi.net Mureka API, poll each job until it is final, and download every result — so you can queue a batch and come back to the winners.
 
+The [`sheet-music/`](./sheet-music) example is a single call instead: give it a song, a YouTube link or an MP3 and it saves the score's MusicXML and PDFs.
+
 | Example | What it does | Docs |
 |---|---|---|
 | [`music/`](./music) | Batch-generate **songs** from text prompts — AI-written lyrics, style, and mood, with **Mureka** model selection | [POST /music/create](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create) |
 | [`lyrics-song/`](./lyrics-song) | Turn **your own lyrics** into songs, steered by genres, moods and vocal gender | [POST /music/create-advanced](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create-advanced?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) |
 | [`instrumental/`](./instrumental) | Batch-generate **instrumental** tracks (no vocals) from a description | [POST /music/create-instrumental](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create-instrumental?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) |
+| [`sheet-music/`](./sheet-music) | Turn a Mureka song, a **YouTube link** or a local **MP3** into **sheet music**: MusicXML, staff PDF and numbered-notation PDF (October 18, 2026) | [POST /music/score](https://useapi.net/docs/api-mureka-v1/post-mureka-music-score?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) · [tutorial](https://useapi.net/docs/articles/mureka-sheet-music?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) |
 
-Walkthrough of all three with `curl`: [How to Generate AI Music with the Mureka API (Suno / Udio Alternative)](https://useapi.net/docs/articles/mureka-bash?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api).
+Walkthrough of the three song examples with `curl`: [How to Generate AI Music with the Mureka API (Suno / Udio Alternative)](https://useapi.net/docs/articles/mureka-bash?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api).
 
 ## Quick start
 

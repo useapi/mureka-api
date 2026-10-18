@@ -8,6 +8,7 @@ node_modules
 *.zip
 
 # Run logs / scratch
+output/
 *_results.txt
 *_errors.txt
 result.json
