@@ -1,0 +1,24 @@
+{
+  "name": "useapi-mureka",
+  "description": "useapi.net Mureka plugin for Claude Code: the hosted MCP server.",
+  "owner": {
+    "name": "useapi.net",
+    "url": "https://useapi.net"
+  },
+  "plugins": [
+    {
+      "name": "mureka",
+      "source": "./",
+      "description": "Hosted Mureka MCP server by useapi.net (40 tools): make songs and instrumentals, manage characters, remix, split stems, get sheet music and generate speech, on your own Mureka web plan. Third-party paid service, not affiliated with Mureka or Kunlun Tech.",
+      "category": "media",
+      "tags": [
+        "mureka",
+        "music",
+        "song",
+        "stems",
+        "tts",
+        "mcp"
+      ]
+    }
+  ]
+}

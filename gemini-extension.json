@@ -1,0 +1,22 @@
+{
+  "name": "useapi-mureka",
+  "version": "1.0.0",
+  "description": "Hosted Mureka MCP server by useapi.net (40 tools): make songs and instrumentals, manage characters, remix, split stems, get sheet music and generate speech, on your own Mureka web plan. Third-party paid service, not affiliated with Mureka or Kunlun Tech.",
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "useapi.net API token",
+      "description": "Your useapi.net API token, from https://useapi.net/docs/start-here/setup-useapi",
+      "envVar": "USEAPI_TOKEN",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "useapi-mureka": {
+      "httpUrl": "https://api.useapi.net/v1/mureka/mcp",
+      "headers": {
+        "Authorization": "Bearer ${USEAPI_TOKEN}"
+      }
+    }
+  }
+}

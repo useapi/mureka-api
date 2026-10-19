@@ -49,6 +49,33 @@ claude mcp add --transport http useapi-mureka https://api.useapi.net/v1/mureka/m
 
 Cursor, VS Code, Windsurf and the full tool list: [Mureka MCP server docs](https://useapi.net/docs/api-mureka-v1/mcp?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api). useapi.net is a third-party API, not affiliated with Mureka or Kunlun Tech.
 
+## Use with Claude Code
+
+This repo is also a Claude Code plugin marketplace. The plugin adds the hosted Mureka MCP server, and reads your token from the `USEAPI_TOKEN` environment variable, so set it before you start Claude Code:
+
+```bash
+export USEAPI_TOKEN=user:12345-...      # your useapi.net API token
+```
+
+Then, inside Claude Code:
+
+```
+/plugin marketplace add useapi/mureka-api
+/plugin install mureka@useapi-mureka
+```
+
+On Claude Code 2.1.275 or later, `/plugin install mureka --marketplace useapi/mureka-api` does both in one step. Run `/mcp` to check that `useapi-mureka` is connected.
+
+## Use with Gemini CLI
+
+This repo is also a Gemini CLI extension with the same MCP server:
+
+```bash
+gemini extensions install https://github.com/useapi/mureka-api
+```
+
+The install asks for your useapi.net API token and keeps it in the system keychain. Change it later with `gemini extensions config useapi-mureka`, and check the connection with `gemini mcp list`.
+
 ## Common questions
 
 <!-- Official API figures in these answers, verified 2026-10-18: https://platform.mureka.ai/pricing (V9 / V8 / O2 4.5 cents a song), per the comparison table on useapi.net/docs/api-mureka-v1. -->

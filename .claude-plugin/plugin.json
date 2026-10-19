@@ -1,0 +1,30 @@
+{
+  "name": "mureka",
+  "displayName": "Mureka (useapi.net)",
+  "description": "Hosted Mureka MCP server by useapi.net (40 tools): make songs and instrumentals, manage characters, remix, split stems, get sheet music and generate speech, on your own Mureka web plan. Third-party paid service, not affiliated with Mureka or Kunlun Tech.",
+  "author": {
+    "name": "useapi.net",
+    "url": "https://useapi.net"
+  },
+  "homepage": "https://useapi.net/docs/api-mureka-v1/mcp",
+  "repository": "https://github.com/useapi/mureka-api",
+  "license": "MIT",
+  "keywords": [
+    "mureka",
+    "music",
+    "song",
+    "stems",
+    "tts",
+    "mcp",
+    "useapi"
+  ],
+  "mcpServers": {
+    "useapi-mureka": {
+      "type": "http",
+      "url": "https://api.useapi.net/v1/mureka/mcp",
+      "headers": {
+        "Authorization": "Bearer ${USEAPI_TOKEN}"
+      }
+    }
+  }
+}
