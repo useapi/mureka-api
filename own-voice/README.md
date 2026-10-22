@@ -1,6 +1,6 @@
 # Sing in your own voice with characters — Mureka API (Node.js and Python)
 
-Upload a clip of your own voice and have [Mureka](https://www.mureka.ai) sing your lyrics with it, in any style you describe, through the [Mureka API](https://useapi.net/docs/api-mureka-v1?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) by [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api). Use the voice once, or turn it into a **character**: a reusable singer you can call by id in every later song. useapi.net is a third-party API, not affiliated with Mureka or Kunlun Tech, and it runs on your own Mureka account.
+Upload a clip of your own voice and have [Mureka](https://www.mureka.ai) sing your lyrics with it, in any style you describe, through the [Mureka API](https://useapi.net/docs/api-mureka-v1?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) by [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api). Use the voice once, or turn it into a **character**: a reusable singer you can call by id in every later song. useapi.net is a third-party API, not affiliated with Mureka or Kunlun Tech, and it runs on your Mureka website subscription.
 
 Real requests and real outputs: **[Mureka: Scarlett Sings "This Is It" — Characters, Remix and Sheet Music](https://useapi.net/blog/261016?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api)**
 
@@ -23,7 +23,7 @@ The blog's cover also passed a 30-second reference track as `ref_id`, which this
 
 - [Node.js](https://nodejs.org) v21 or newer **or** [Python](https://www.python.org) 3.x (neither has any dependencies to install)
 - A useapi.net [API token](https://useapi.net/docs/start-here/setup-useapi?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api)
-- A connected [Mureka account](https://useapi.net/docs/start-here/setup-mureka?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) on a paid Mureka plan. The current models need an active paid plan, and a plan without characters answers [POST /music/characters](https://useapi.net/docs/api-mureka-v1/post-mureka-music-characters?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) with `403` `low vip level (6335)`. The docs name no plan requirement for uploading a voice.
+- A connected [Mureka account](https://useapi.net/docs/start-here/setup-mureka?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) on a Mureka Premier subscription ($30 a month, as of October 2026): singing in your own voice is a Premier feature. A plan without characters answers [POST /music/characters](https://useapi.net/docs/api-mureka-v1/post-mureka-music-characters?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) with `403` `low vip level (6335)`. The docs name no plan requirement for uploading a voice.
 - An MP3 of your voice. About 30 seconds of clear singing works best for a character.
 
 ## Step by step with curl
@@ -198,12 +198,12 @@ The song, and for `character` the character too. The one in this folder is the b
 - `lyrics`, **required**, the words to sing (up to 5,000 characters). Tag sections with `[Verse]`, `[Chorus]`, `[Bridge]`.
 - `desc`, the style: genres, moods and vocals, comma-separated (up to 1,000 characters). Valid values: [GET /music/moods-and-genres](https://useapi.net/docs/api-mureka-v1/get-mureka-music-moods-and-genres?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api).
 - `title` (up to 50 characters), `model` (`V9.5` default, `V9`, `V8`, `O2`, `V7.6`, `V7.5`) and `vocal_gender` (`female` or `male`) are optional.
-- `character` is used by the `character` command: `name` (required), `bio`, `tags`, `desc`, and `private`. This script makes characters **private unless `private` is `false`**, while the API itself defaults to public.
+- `character` is used by the `character` command: `name` (required), `bio`, `tags`, `desc`, and `private`. This script makes characters private unless `private` is `false`, while the API itself defaults to public.
 
 ## Cost
 
-- Uploading a voice and creating a character are **free**.
-- A song costs the **normal song price** of the model, from your Mureka plan: in the blog's run, 12 Mureka Gold per song on V9.5 and 20 on O2, and each call returns two songs.
+- Uploading a voice and creating a character are free.
+- A song costs the normal song price of the model, from your Mureka Premier Gold: 12 Mureka Gold per song on V9.5 (1.8 cents on Premier, as of October 2026) and 20 on O2, and each call returns two songs.
 - Listing, publishing and deleting characters cost nothing.
 - API access is a flat [useapi.net subscription](https://useapi.net/docs/subscription?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api), with no per-call charge from us.
 

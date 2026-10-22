@@ -1,10 +1,10 @@
 # Instrumental tracks — Mureka API batch generation (Node.js and Python)
 
-Batch-generate **instrumental** music (no vocals, no lyrics) with **Mureka's models** through the [Mureka API](https://useapi.net/docs/api-mureka-v1?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) by [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api), driving your own [Mureka](https://www.mureka.ai) account.
+Batch-generate **instrumental** music (no vocals, no lyrics) with Mureka's models through the [Mureka API](https://useapi.net/docs/api-mureka-v1?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) by [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api), on your [Mureka subscription](https://www.mureka.ai/subscribe).
 
-📖 Full walkthrough: **[How to Generate AI Music with the Mureka API — Write your own lyrics, or force an instrumental](https://useapi.net/docs/articles/mureka-bash?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api#write-your-own-lyrics-or-force-an-instrumental)**
+Full walkthrough: **[How to Generate AI Music with the Mureka API — Write your own lyrics, or force an instrumental](https://useapi.net/docs/articles/mureka-bash?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api#write-your-own-lyrics-or-force-an-instrumental)**
 
-`instrumental.mjs` (and its Python twin `instrumental.py`) reads prompts from `prompts.json`, submits each one to [`POST /music/create-instrumental`](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create-instrumental?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) in **async** mode, polls [`GET /jobs/{jobid}`](https://useapi.net/docs/api-mureka-v1/get-mureka-jobs-jobid?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) until each job is `completed`, and downloads every generated MP3. Each generation returns **two tracks** (occasionally a third).
+`instrumental.mjs` (and its Python twin `instrumental.py`) reads prompts from `prompts.json`, submits each one to [`POST /music/create-instrumental`](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create-instrumental?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) in **async** mode, polls [`GET /jobs/{jobid}`](https://useapi.net/docs/api-mureka-v1/get-mureka-jobs-jobid?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) until each job is `completed`, and downloads every generated MP3. Each generation returns two tracks (occasionally a third).
 
 ## Prerequisites
 

@@ -1,6 +1,6 @@
 # Sheet music from a song, a YouTube link or an MP3 — Mureka API (Node.js and Python)
 
-Turn a song into sheet music with one call to the [Mureka API](https://useapi.net/docs/api-mureka-v1?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) by [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api): send one of your [Mureka](https://www.mureka.ai) songs, a YouTube link or a local MP3, and get back a zip with a MusicXML file, a staff-notation PDF and a numbered-notation PDF of the melody, chords and lyrics. useapi.net is a third-party API, not affiliated with Mureka or Kunlun Tech, and it runs on your own Mureka account.
+Turn a song into sheet music with one call to the [Mureka API](https://useapi.net/docs/api-mureka-v1?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) by [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api): send one of your [Mureka](https://www.mureka.ai) songs, a YouTube link or a local MP3, and get back a zip with a MusicXML file, a staff-notation PDF and a numbered-notation PDF of the melody, chords and lyrics. useapi.net is a third-party API, not affiliated with Mureka or Kunlun Tech, and it runs on your Mureka website subscription.
 
 Full walkthrough: **[How to Turn a Song or YouTube Link into Sheet Music with the Mureka API](https://useapi.net/docs/articles/mureka-sheet-music?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api)**
 
@@ -68,8 +68,8 @@ The lyrics are transcribed from the recording, so read them against your own. Mu
 
 ## Cost and limits
 
-- **10 Mureka Gold per score**, from your Mureka account. Not enough Gold answers `412`. Scoring the same YouTube link again returned the earlier zip without a second charge in our tests.
-- The audio must be **10 seconds to 10 minutes** long.
+- 10 Mureka Gold per score (1.5 cents on Mureka Premier, 2 cents on Pro, as of October 2026), from your Mureka subscription. Not enough Gold answers `412`. Scoring the same YouTube link again returned the earlier zip without a second charge in our tests.
+- The audio must be 10 seconds to 10 minutes long.
 - API access is a flat [useapi.net subscription](https://useapi.net/docs/subscription?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api), with no per-call charge from us.
 
 ## The same from an AI assistant

@@ -13,6 +13,7 @@ Example with real outputs: https://useapi.net/blog/261016
 
 Uploading a voice and creating a character are free. Each song call returns two songs
 (occasionally three) at the normal song price of the model.
+Singing in your own voice needs a Mureka Premier subscription.
 
 Python port of own-voice.mjs, standard library only (no pip install needed).
 

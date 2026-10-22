@@ -1,10 +1,10 @@
 # Songs from your own lyrics — Mureka API batch generation (Node.js and Python)
 
-Turn **your own lyrics** into finished songs with **Mureka's models** through the [Mureka API](https://useapi.net/docs/api-mureka-v1?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) by [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api), driving your own [Mureka](https://www.mureka.ai) account. The model sings your exact words; you steer the style with genres, moods and a vocal gender.
+Turn **your own lyrics** into finished songs with Mureka's models through the [Mureka API](https://useapi.net/docs/api-mureka-v1?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) by [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api), on your [Mureka subscription](https://www.mureka.ai/subscribe). The model sings your exact words; you steer the style with genres, moods and a vocal gender.
 
-📖 Full walkthrough: **[How to Generate AI Music with the Mureka API — Write your own lyrics, or force an instrumental](https://useapi.net/docs/articles/mureka-bash?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api#write-your-own-lyrics-or-force-an-instrumental)**
+Full walkthrough: **[How to Generate AI Music with the Mureka API — Write your own lyrics, or force an instrumental](https://useapi.net/docs/articles/mureka-bash?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api#write-your-own-lyrics-or-force-an-instrumental)**
 
-`lyrics-song.mjs` (and its Python twin `lyrics-song.py`) reads entries from `prompts.json`, submits each one to [`POST /music/create-advanced`](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create-advanced?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) in **async** mode, polls [`GET /jobs/{jobid}`](https://useapi.net/docs/api-mureka-v1/get-mureka-jobs-jobid?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) until each job is `completed`, and downloads every generated MP3. Each generation returns **two songs** (occasionally a third).
+`lyrics-song.mjs` (and its Python twin `lyrics-song.py`) reads entries from `prompts.json`, submits each one to [`POST /music/create-advanced`](https://useapi.net/docs/api-mureka-v1/post-mureka-music-create-advanced?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) in **async** mode, polls [`GET /jobs/{jobid}`](https://useapi.net/docs/api-mureka-v1/get-mureka-jobs-jobid?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api) until each job is `completed`, and downloads every generated MP3. Each generation returns two songs (occasionally a third).
 
 ## Prerequisites
 
