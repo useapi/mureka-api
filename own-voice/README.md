@@ -10,14 +10,14 @@ Real requests and real outputs: **[Mureka: Scarlett Sings "This Is It" — Chara
 
 These are from the blog post above. A 55-second clip of one female voice became the character "Scarlett", which then sang new lyrics in a dark funk-pop style:
 
-- [The source voice](https://demo.useapi.net/discord-cdn-proxy/?https://cdn.discordapp.com/attachments/1239264794394234985/1560853908170088530/scarlett-voice.mp3) (MP3, 0:55)
-- ["This Is It", V9.5](https://demo.useapi.net/discord-cdn-proxy/?https://cdn.discordapp.com/attachments/1239264794394234985/1560853985685016586/this-is-it-v9-5.mp3) (MP3, 3:23)
-- ["This Is It", O2](https://demo.useapi.net/discord-cdn-proxy/?https://cdn.discordapp.com/attachments/1239264794394234985/1560853932685660282/this-is-it-o2.mp3) (MP3, 3:21), the same call with `model: O2`
-- [The remix, a slow torch ballad](https://demo.useapi.net/discord-cdn-proxy/?https://cdn.discordapp.com/attachments/1239264794394234985/1560853957423796244/this-is-it-remix-v9-5.mp3) (MP3, 3:29), made from the V9.5 take with [POST /music/remix](https://useapi.net/docs/api-mureka-v1/post-mureka-music-remix?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api)
+- [The source voice](https://media.useapi.net/blog/2026-10-16-261016/scarlett-voice.mp3) (MP3, 0:55)
+- ["This Is It", V9.5](https://media.useapi.net/blog/2026-10-16-261016/this-is-it-v9-5.mp3) (MP3, 3:23)
+- ["This Is It", O2](https://media.useapi.net/blog/2026-10-16-261016/this-is-it-o2.mp3) (MP3, 3:21), the same call with `model: O2`
+- [The remix, a slow torch ballad](https://media.useapi.net/blog/2026-10-16-261016/this-is-it-remix-v9-5.mp3) (MP3, 3:29), made from the V9.5 take with [POST /music/remix](https://useapi.net/docs/api-mureka-v1/post-mureka-music-remix?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api)
 
 The blog's cover also passed a 30-second reference track as `ref_id`, which this example leaves out (add it to the curl in step 3 if you want one). The same songs came back as sheet music too; the [`sheet-music/`](../sheet-music) example does that part.
 
-<a href="https://demo.useapi.net/discord-cdn-proxy/?https://cdn.discordapp.com/attachments/1239264794394234985/1560853977640476712/this-is-it-v9-5-staff.pdf"><img src="https://demo.useapi.net/discord-cdn-proxy/?https://cdn.discordapp.com/attachments/1239264794394234985/1560853965330063512/this-is-it-v9-5-staff-page1.png" alt="This Is It, V9.5 take, sheet music page 1 of 4" width="340"></a>
+<a href="https://media.useapi.net/blog/2026-10-16-261016/this-is-it-v9-5-staff.pdf"><img src="https://media.useapi.net/blog/2026-10-16-261016/this-is-it-v9-5-staff-page1.png" alt="This Is It, V9.5 take, sheet music page 1 of 4" width="340"></a>
 
 ## Prerequisites
 
