@@ -20,12 +20,12 @@ Walkthrough of the three song examples with `curl`: [How to Generate AI Music wi
 
 Articles:
 
-- [Suno API Alternative: Mureka, Lyria 3.5, TemPolor and MiniMax](https://useapi.net/docs/articles/suno-api-alternative?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api)
+- [Suno API Alternative: ACE Music, Mureka, Lyria 3.5, TemPolor and MiniMax](https://useapi.net/docs/articles/suno-api-alternative?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api)
 - [How to Turn a Song or YouTube Link into Sheet Music with the Mureka API](https://useapi.net/docs/articles/mureka-sheet-music?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api)
 - [Mureka API Music Samples](https://useapi.net/docs/articles/mureka-music-samples?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api)
 - [How to Generate AI Music with the Mureka API (Suno / Udio Alternative)](https://useapi.net/docs/articles/mureka-bash?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api)
 - [AI Music APIs Compared: Mureka vs MiniMax vs ElevenLabs vs Lyria 3 Pro](https://useapi.net/docs/articles/ai-music-api-comparison?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api)
-- [Four AI Music APIs on the Same Six Briefs: TemPolor v4.8, MiniMax Music-3.0, Lyria 3.5 and Mureka V9.5](https://useapi.net/docs/articles/ai-music-flagships-compared?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api)
+- [Five AI Music APIs on the Same Six Briefs: ACE Music v1, TemPolor v4.8, MiniMax Music-3.0, Lyria 3.5 and Mureka V9.5](https://useapi.net/docs/articles/ai-music-flagships-compared?utm_source=github.com&utm_medium=referral&utm_campaign=mureka-api)
 
 ## Quick start
 
